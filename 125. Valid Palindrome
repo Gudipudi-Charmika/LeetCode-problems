@@ -1,0 +1,13 @@
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        x=""
+        for char in s:
+            if 65<=ord(char)<=90 or 97<=ord(char)<=122 or 48<=ord(char)<=57:
+                x+=char
+            else:
+                continue
+        x=x.lower()
+        c=x[::-1]
+        if(x==c):
+            return True
+        return False
